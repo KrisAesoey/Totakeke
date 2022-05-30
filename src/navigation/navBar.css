@@ -1,0 +1,23 @@
+.navStrip {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.navItem {
+    padding-left: 1em;
+}
+
+.navItem a, a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.navItem a:hover {
+    color: #7393B3;
+}

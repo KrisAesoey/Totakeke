@@ -1,0 +1,50 @@
+.albumButtonChart {
+    border-radius: 25px;
+    margin-top: 1em;
+    height: 80px;
+    width: 95%;
+    background-color: #FFFFF0;
+    border: #FFFFF0;
+    box-shadow: 0px 2px 8px 1px black;
+    color: black;
+}
+
+.albumButtonChart:hover {
+    box-shadow: 0px 2px 12px 2px black;
+}
+
+.albumChart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+
+.albumArtist {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+
+.albumCoverChart {
+    border-radius: 25px;
+    height: 40px;
+    margin: 1em;
+}
+
+.albumButtonChart:hover .albumCover {
+    box-shadow: 0px 0px 8px 1px #888888;
+}
+
+.genreTagChart {
+    background-color: #CF9FFF;
+    padding: 0.6em;
+    margin: 0.2em;
+    border-radius: 1em;
+    font-size: 75%;
+    font-weight: bold;
+}
+
+.albumRating {
+    margin-left: auto;
+    margin-right: 1em;
+}

@@ -1,0 +1,9 @@
+.chartPage {
+    display: flex;
+    justify-content: center;
+    background-color: #73a9b3;
+}
+
+.chartItem {
+    flex-grow: 1;
+}

@@ -1,0 +1,5 @@
+.newAlbumsPage {
+    display: flex;
+    flex-direction: column;
+    background-color: #7bd179;
+}
