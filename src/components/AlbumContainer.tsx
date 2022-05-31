@@ -30,21 +30,23 @@ const AlbumContainer : React.FC<IAlbumContainerProps> = ({ album } : IAlbumConta
                 <div>
                     <img src={album.image_url} alt="./rumours_fleetwoodmac.jpg" className="albumCover"/>
                 </div>
-                <div className={titleClass}>
-                    {album.title}
-                </div>
-                <div>
-                    <h2>{album.artist}</h2>
-                </div>
-                <div>
-                    <h1>{album.rating} / 10</h1>
-                </div>
-                <div className="genresContainer">
-                    {album.genres.map((genre) =>
-                        <span className="genreTag" style={{color: GenreTagTextColorer(genre), background: GenreTagBackgroundColorer(genre)}}>
-                            {genre}
-                        </span>
-                    )}
+                <div className="albumInfo">
+                    <div className={titleClass}>
+                        {album.title}
+                    </div>
+                    <div className="albumArtistCard">
+                        {album.artist}
+                    </div>
+                    <div className="shortTitle">
+                        {album.rating} / 10
+                    </div>
+                    <div className="genresContainer">
+                        {album.genres.map((genre) =>
+                            <span className="genreTag" style={{color: GenreTagTextColorer(genre), background: GenreTagBackgroundColorer(genre)}}>
+                                {genre}
+                            </span>
+                        )}
+                    </div>
                 </div>
             </div>
         </button>

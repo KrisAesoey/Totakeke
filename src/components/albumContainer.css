@@ -1,24 +1,3 @@
-h1 {
-    margin: 0 0 4px 0;
-}
-
-h2 {
-    color: darkslategray;
-    margin: 0 0 8px 0;
-}
-
-.shortTitle {
-    font-size: 2em;
-    font-weight: bolder;
-    margin: 0 0 4px 0;
-}
-
-.longTitle {
-    font-size: 1.4em;
-    font-weight: bolder;
-    margin: 2px 0 9px 0;
-}
-
 .albumButton {
     border-radius: 25px;
     margin: 0.5em;
@@ -52,8 +31,27 @@ h2 {
     box-shadow: 0px 0px 8px 1px #888888;
 }
 
+.shortTitle {
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 0 0 4px 0;
+}
+
+.longTitle {
+    font-size: 1.4em;
+    font-weight: bolder;
+    margin: 2px 0 9px 0;
+}
+
+.albumArtistCard {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: darkslategray;
+    margin: 0 0 8px 0;
+}
+
 .genresContainer {
-    margin-top: 4px;
+    margin-top: 6px;
 }
 
 .genreTag {
@@ -66,6 +64,28 @@ h2 {
 @media screen and (max-width: 920px) {
     .albumButton {
         width: 95vw;
+        height: 330px;
         border-radius: 25px;
+    }
+
+    .albumContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 480px;
+        height: 320px;
+    }
+
+    .albumCover {
+        flex: 1;
+        width: 100%;
+        border-radius: 100%;
+    }
+
+    .albumInfo {
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        min-width: 60%;
     }
 }
