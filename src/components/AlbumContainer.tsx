@@ -3,13 +3,6 @@ import { Album } from '../types/Types';
 import { GenreTagTextColorer, GenreTagBackgroundColorer } from '../utils/TagColoring';
 import './albumContainer.css';
 
-/**
- * Definition  of props passed to AlbumContainer component
- */
-interface IAlbumContainerProps {
-    album : Album;
-}
-
 function shortOrLongTitle(title: string): string {
     if (title.length > 15) {
         return "longTitle";
@@ -22,7 +15,7 @@ function shortOrLongTitle(title: string): string {
  * @param album The album to present
  * @returns Component for album presentation
  */
-const AlbumContainer : React.FC<IAlbumContainerProps> = ({ album } : IAlbumContainerProps) => {
+const AlbumContainer = ({ album }: { album: Album }) => {
     let titleClass: string = shortOrLongTitle(album.title);
     return (
         <button className="albumButton">

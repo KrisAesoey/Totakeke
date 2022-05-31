@@ -4,18 +4,11 @@ import { GenreTagTextColorer, GenreTagBackgroundColorer } from '../../utils/TagC
 import './albumChartElement.css';
 
 /**
- * Definition  of props passed to AlbumContainer component
- */
- interface AlbumContainerProps {
-    album : Album;
-}
-
-/**
  * Container for presenting albums
  * @param album The album to present
  * @returns Component for album presentation
  */
-const AlbumChartElement : React.FC<AlbumContainerProps> = ({ album } : AlbumContainerProps) => {
+const AlbumChartElement = ({ album } : { album : Album }) => {
     return (
         <button className="albumButtonChart">
             <div className="albumChart">
