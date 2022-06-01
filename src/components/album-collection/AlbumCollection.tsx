@@ -1,7 +1,7 @@
 import React from 'react';
 import { AlbumCollection } from '../../types/Types';
 import { MockAlbums } from '../../mock/albums';
-import AlbumContainer from '../AlbumContainer';
+import AlbumCard from '../AlbumCard';
 import './albumCollection.css';
 
 const AlbumCollectionC = ( { albumCollection }: { albumCollection : AlbumCollection} ) => {
@@ -13,7 +13,7 @@ const AlbumCollectionC = ( { albumCollection }: { albumCollection : AlbumCollect
             </h1>
             <div>
                 {
-                    collection.sort((a, b) => a.artist > b.artist ? 1 : -1).map( ( album) => <AlbumContainer album={ album } />)
+                    collection.sort((a, b) => a.artist > b.artist ? 1 : -1).map( ( album) => <AlbumCard album={ album } />)
                 }
             </div>
         </body>

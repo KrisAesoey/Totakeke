@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Album } from '../types/Types';
 import { GenreTagTextColorer, GenreTagBackgroundColorer } from '../utils/TagColoring';
-import './albumContainer.css';
+import './albumCard.css';
 
 function shortOrLongTitle(title: string): string {
     if (title.length > 15) {
@@ -15,11 +15,11 @@ function shortOrLongTitle(title: string): string {
  * @param album The album to present
  * @returns Component for album presentation
  */
-const AlbumContainer = ({ album }: { album: Album }) => {
+const AlbumCard = ({ album }: { album: Album }) => {
     let titleClass: string = shortOrLongTitle(album.title);
     return (
         <button className="albumButton">
-            <div className="albumContainer">
+            <div className="albumCard">
                 <div>
                     <img src={album.image_url} alt="./rumours_fleetwoodmac.jpg" className="albumCover"/>
                 </div>
@@ -46,4 +46,4 @@ const AlbumContainer = ({ album }: { album: Album }) => {
     );
 };
 
-export default AlbumContainer;
+export default AlbumCard;
