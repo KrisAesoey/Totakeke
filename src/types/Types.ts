@@ -6,7 +6,10 @@ export interface Album {
     id: number;
     title: string;
     artist: string;
+    songs: string[];
     genres: string[];
+    length: string;
+    release: Date;
     rating: number; 
     image_url: string;
 }
