@@ -10,9 +10,9 @@ const MyAccount = () => {
             <header>
                 <NavBar />
             </header>
-            <body>
+            <div>
                 <img src="https://c.tenor.com/00ZMZ2jSw34AAAAd/lifecouldbeadream-monkey-swimming.gif" alt="rumours_fleetwoodmac.jpeg" />
-            </body>
+            </div>
         </div>
     );
 }

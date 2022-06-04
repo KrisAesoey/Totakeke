@@ -2,9 +2,9 @@ import './App.css';
 
 import React from 'react';
 
-import NavBar from './navigation/NavBar.tsx';
-import { MockAlbums } from './mock/albums.ts';
-import AlbumCard from './components/album-card/AlbumCard.tsx';
+import NavBar from './navigation/NavBar';
+import { MockAlbums } from './mock/albums';
+import AlbumCard from './components/album-card/AlbumCard';
 
 function App() {
   return (
