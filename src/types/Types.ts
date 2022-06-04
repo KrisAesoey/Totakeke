@@ -2,7 +2,7 @@
  * Definition of what values constitutes
  * an album, #TODO make rating number | undefined
  */
-export interface Album {
+export type Album = {
     id: number;
     title: string;
     artist: string;
@@ -14,7 +14,7 @@ export interface Album {
     image_url: string;
 }
 
-export interface AlbumCollection {
+export type AlbumCollection = {
     id: number;
     title: string;
     albumIds: number[];
