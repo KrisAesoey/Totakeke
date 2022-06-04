@@ -4,7 +4,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 1em;
+    padding: 0.5em;
     font-size: calc(10px + 2vmin);
     color: white;
 }
