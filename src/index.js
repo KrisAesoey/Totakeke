@@ -11,6 +11,7 @@ import Charts from './routes/Charts.tsx';
 import NewAlbums from './routes/NewAlbums.tsx';
 import reportWebVitals from './reportWebVitals';
 import MyAccount from './routes/MyAccount';
+import AlbumPage from './routes/AlbumPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -20,6 +21,7 @@ root.render(
       <Route path="/new" element={<NewAlbums />} />
       <Route path="/charts" element={<Charts />} />
       <Route path="/account" element={<MyAccount />} />
+      <Route path="/albums/:albumId" element={<AlbumPage />} />
     </Routes>
   </BrowserRouter>
 );

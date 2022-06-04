@@ -1,0 +1,11 @@
+.albumPage {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow-y: hidden;
+    background: #AB82B3;
+}
+
+.albumPageBody {
+    flex: 1;
+}

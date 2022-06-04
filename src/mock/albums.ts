@@ -11,7 +11,7 @@ export function MockAlbums() : Album[] {
             id: 0,
             title: "loveless",
             artist: "My Bloody Valentine",
-            songs: [""],
+            songs: ["Alpha", "Bravo Charlie", "Delta", "Echo Foxtrot", "Golf", "Hotel", "India", "Juliet Kilo"],
             genres: ["Shoegaze"],
             length: "48:31",
             release: new Date("1991-11-4"),
