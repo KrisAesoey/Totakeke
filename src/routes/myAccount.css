@@ -2,5 +2,5 @@
     display: flex;
     flex-direction: column;
     background: navy;
-    justify-content: center;
+    min-height: 100vh;
 }
