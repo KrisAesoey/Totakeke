@@ -1,5 +1,6 @@
 import React from 'react';
 import { Album } from '../../types/Types';
+import TracklistDisplay from '../tracklist/TracklistDisplay';
 import './albumDisplay.css';
 
 const AlbumDisplay = ( { album }: { album: Album}) => (
@@ -9,9 +10,7 @@ const AlbumDisplay = ( { album }: { album: Album}) => (
             <img className="albumDisplayCover" src={album.image_url} />
             <p>{album.length}</p>
             <p>{album.release.toISOString().split('T')[0]}</p>
-            <ol>
-                {album.songs.map( (song) => <li key={song}>{song}</li>)}
-            </ol>
+            <TracklistDisplay tracklist={album.tracklist} />
         </div>
     </div>
 );

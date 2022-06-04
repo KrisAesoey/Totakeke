@@ -6,6 +6,18 @@ export type Album = {
     id: number;
     title: string;
     artist: string;
+    tracklist: Tracklist;
+    genres: string[];
+    length: string;
+    release: Date;
+    rating: number; 
+    image_url: string;
+}
+
+export type OldAlbum = {
+    id: number;
+    title: string;
+    artist: string;
     songs: string[];
     genres: string[];
     length: string;
@@ -19,6 +31,16 @@ export type AlbumCollection = {
     title: string;
     albumIds: number[];
     release: Date;
+}
+
+export type Song = {
+    title: string;
+    length: string;
+    rating: number;
+}
+
+export type Tracklist = {
+    songs: Song[];
 }
 
 /**

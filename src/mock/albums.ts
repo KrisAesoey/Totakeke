@@ -1,11 +1,40 @@
-import { Album, AlbumCollection } from '../types/Types';
+import { Album, OldAlbum, AlbumCollection, Tracklist } from '../types/Types';
+import { MockTracklists } from './tracklists';
 
 /**
  * Function that when called gives a list of
  * example albums and information for mock
  * @returns A list of mock album information
  */
-export function MockAlbums() : Album[] {
+ export function MockAlbums() : Album[] {
+    let tl: Tracklist[] = MockTracklists();
+
+    return [
+        {
+            id: 0,
+            title: "loveless",
+            artist: "My Bloody Valentine",
+            tracklist: tl[0],
+            genres: ["Shoegaze"],
+            length: "48:31",
+            release: new Date("1991-11-4"),
+            rating: 9.31,
+            image_url: "https://upload.wikimedia.org/wikipedia/en/4/4b/My_Bloody_Valentine_-_Loveless.png",
+        }, {
+            id: 1,
+            title: "Rumours",
+            artist: "Fleetwood Mac",
+            tracklist: tl[1],
+            genres: ["Folk", "Rock"],
+            length: "38:55",
+            release: new Date("1977-2-4"),
+            rating: 9.87,
+            image_url: "https://media.npr.org/assets/img/2013/01/29/highres-fleetwood-mac-rumours_sq-bd15e71f50b6fbd94288a16014a69c8092ad9ff5.jpg",
+        },
+    ]
+ };
+
+export function MockOldAlbums() : OldAlbum[] {
     return [
         {
             id: 0,
