@@ -1,7 +1,7 @@
 import React from 'react';
 import { AlbumCollection } from '../../types/Types';
 import { MockAlbums } from '../../mock/albums';
-import AlbumCard from '../AlbumCard';
+import AlbumCard from '../album-card/AlbumCard';
 import './albumCollection.css';
 
 const AlbumCollectionC = ( { albumCollection }: { albumCollection : AlbumCollection} ) => {
