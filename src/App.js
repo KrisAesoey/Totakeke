@@ -4,7 +4,7 @@ import React from 'react';
 
 import NavBar from './navigation/NavBar.tsx';
 import { MockAlbums } from './mock/albums.ts';
-import AlbumCard from './components/AlbumCard.tsx';
+import AlbumCard from './components/album-card/AlbumCard.tsx';
 
 function App() {
   return (
@@ -12,11 +12,11 @@ function App() {
       <header className="App-header">
         <NavBar />
       </header>
-      <body className="App-body">
+      <div className="App-body">
         <div>
           {MockAlbums().map((album) => <AlbumCard album={album}/>)}
         </div>
-      </body>
+      </div>
     </div>
   );
 }
